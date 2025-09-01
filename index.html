@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sufyan - Freelance Web Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-trail"></div>
+
+    <!-- Navigation -->
+    <header class="fixed w-full bg-white shadow-sm z-50 transition-all duration-300" data-aos="fade-down">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-xl font-bold gradient-text">SUFYAN</a>
+            
+            <ul class="hidden md:flex space-x-8">
+                <li><a href="#home" class="nav-link active">HOME</a></li>
+                <li><a href="#about" class="nav-link">ABOUT</a></li>
+                <li><a href="#services" class="nav-link">SERVICES</a></li>
+                <li><a href="#portfolio" class="nav-link">PORTFOLIO</a></li>
+                <li><a href="#contact" class="nav-link">CONTACT</a></li>
+            </ul>
+            
+            <button class="md:hidden text-gray-600 focus:outline-none" id="menu-toggle">
+                <i class="fas fa-bars text-xl"></i>
+            </button>
+        </nav>
+        
+        <!-- Mobile Menu -->
+        <div class="mobile-menu hidden md:hidden" id="mobile-menu">
+            <ul class="flex flex-col space-y-4 pb-6 pt-6">
+                <li><a href="#home" class="block text-lg">HOME</a></li>
+                <li><a href="#about" class="block text-lg">ABOUT</a></li>
+                <li><a href="#services" class="block text-lg">SERVICES</a></li>
+                <li><a href="#portfolio" class="block text-lg">PORTFOLIO</a></li>
+                <li><a href="#contact" class="block text-lg">CONTACT</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen hero-bg flex items-center justify-center relative overflow-hidden" data-aos="fade-up">
+        <div class="container mx-auto px-6 text-center relative z-10">
+            <h1 class="text-5xl md:text-6xl font-bold mb-6 gradient-text">
+                Hello, I'm <span class="font-light"> SUFYAN</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-600 mb-8 max-w-2xl mx-auto">
+                A passionate full-stack web developer creating beautiful & functional digital experiences
+            </p>
+            <div class="flex justify-center space-x-4">
+                <a href="#contact" class="bg-gradient-to-r from-indigo-500 to-pink-500 text-white px-8 py-3 rounded-full font-medium hover:shadow-lg transition-all duration-300 transform hover:scale-105">
+                    Hire Me
+                </a>
+                <a href="#portfolio" class="border-2 border-gray-300 text-gray-700 px-8 py-3 rounded-full font-medium hover:bg-gray-100 transition-all duration-300">
+                    View Work
+                </a>
+            </div>
+        </div>
+        
+        <!-- Floating Elements -->
+        <div class="absolute top-1/4 right-10 floating-animation" data-aos="zoom-in-right">
+            <i class="fas fa-code text-6xl text-indigo-200 opacity-70"></i>
+        </div>
+        <div class="absolute bottom-1/4 left-10 floating-animation" data-aos="zoom-in-left" style="animation-delay: 1s;">
+            <i class="fas fa-laptop-code text-6xl text-pink-200 opacity-70"></i>
+        </div>
+        
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 scroll-indicator" data-aos="fade-up">
+            <i class="fas fa-chevron-down text-2xl text-gray-400 animate-bounce"></i>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white" data-aos="fade-up">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4 gradient-text">About Me</h2>
+                <p class="text-gray-600 text-lg">Crafting digital solutions with passion and precision</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="relative" data-aos="fade-right">
+                    <img src="img/sufyan.png" alt="Sufyan" class="rounded-full w-96 h-96 object-cover mx-auto shadow-2xl">
+                    <div class="absolute -bottom-4 -right-4 bg-gradient-to-r from-indigo-500 to-pink-500 p-4 rounded-full">
+                        <i class="fas fa-code text-white text-2xl"></i>
+                    </div>
+                </div>
+                
+                <div class="space-y-6" data-aos="fade-left">
+                    <p class="text-lg leading-relaxed text-gray-700">
+                        I'm Sufyan, a versatile full-stack web developer with over 5 years of experience 
+                        creating responsive websites and applications. My journey began with a fascination 
+                        for how technology can solve real-world problems and improve user experiences.
+                    </p>
+                    
+                    <p class="text-lg leading-relaxed text-gray-700">
+                        I specialize in modern technologies including React, Node.js, and various frontend 
+                        frameworks. I believe in writing clean, maintainable code and delivering projects 
+                        that not only look great but also perform exceptionally well across all devices.
+                    </p>
+                    
+                    <div class="mt-8">
+                        <h3 class="text-2xl font-semibold mb-4">My Expertise</h3>
+                        <div class="space-y-4">
+                            <div>
+                                <div class="flex justify-between mb-1">
+                                    <span>Frontend Development</span>
+                                    <span>95%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 95%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between mb-1">
+                                    <span>Backend Development</span>
+                                    <span>90%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between mb-1">
+                                    <span>UI/UX Design</span>
+                                    <span>85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between mb-1">
+                                    <span>Database Management</span>
+                                    <span>80%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 80%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-gray-50" data-aos="fade-up">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4 gradient-text">What I Offer</h2>
+                <p class="text-gray-600 text-lg">Comprehensive web development services tailored to your needs</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-md card-hover" data-aos="flip-left">
+                    <div class="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-laptop-code text-2xl text-indigo-500"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Web Development</h3>
+                    <p class="text-gray-600">Building responsive and scalable websites using modern technologies.</p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-xl shadow-md card-hover" data-aos="flip-left" data-aos-delay="100">
+                    <div class="w-16 h-16 bg-pink-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-mobile-alt text-2xl text-pink-500"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Responsive Design</h3>
+                    <p class="text-gray-600">Creating seamless experiences across all devices and screen sizes.</p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-xl shadow-md card-hover" data-aos="flip-left" data-aos-delay="200">
+                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-cogs text-2xl text-purple-500"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Custom Solutions</h3>
+                    <p class="text-gray-600">Tailored web applications designed to meet specific business requirements.</p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-xl shadow-md card-hover" data-aos="flip-left" data-aos-delay="300">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-search text-2xl text-blue-500"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">SEO Optimization</h3>
+                    <p class="text-gray-600">Improving search engine visibility and driving organic traffic to your site.</p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-xl shadow-md card-hover" data-aos="flip-left" data-aos-delay="400">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-shield-alt text-2xl text-green-500"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Security Implementation</h3>
+                    <p class="text-gray-600">Ensuring your website is secure and protected against potential threats.</p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-xl shadow-md card-hover" data-aos="flip-left" data-aos-delay="500">
+                    <div class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-chart-line text-2xl text-yellow-500"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-4">Performance Tuning</h3>
+                    <p class="text-gray-600">Optimizing loading times and overall performance for better user experience.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-20 bg-white" data-aos="fade-up">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4 gradient-text">My Work</h2>
+                <p class="text-gray-600 text-lg">A showcase of my recent projects and achievements</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-50 rounded-xl overflow-hidden shadow-md card-hover" data-aos="fade-up">
+                    <img src="https://picsum.photos/seed/project1/400/250.jpg" alt="E-commerce Platform" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">E-commerce Platform</h3>
+                        <p class="text-gray-600 mb-4">A full-featured online store with payment integration and inventory management.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm text-gray-500">React • Node.js • MongoDB</span>
+                            <a href="#" class="text-indigo-500 hover:text-indigo-600 font-medium">View Project →</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-50 rounded-xl overflow-hidden shadow-md card-hover" data-aos="fade-up" data-aos-delay="100">
+                    <img src="https://picsum.photos/seed/project2/400/250.jpg" alt="Portfolio Website" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Creative Agency Site</h3>
+                        <p class="text-gray-600 mb-4">A sleek and modern website for a creative agency showcasing their work.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm text-gray-500">HTML • CSS • JavaScript</span>
+                            <a href="#" class="text-indigo-500 hover:text-indigo-600 font-medium">View Project →</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-50 rounded-xl overflow-hidden shadow-md card-hover" data-aos="fade-up" data-aos-delay="200">
+                    <img src="https://picsum.photos/seed/project3/400/250.jpg" alt="Task Management App" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Task Management App</h3>
+                        <p class="text-gray-600 mb-4">An intuitive application for managing tasks and team collaboration.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm text-gray-500">Vue.js • Express • PostgreSQL</span>
+                            <a href="#" class="text-indigo-500 hover:text-indigo-600 font-medium">View Project →</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-50 rounded-xl overflow-hidden shadow-md card-hover" data-aos="fade-up" data-aos-delay="300">
+                    <img src="https://picsum.photos/seed/project4/400/250.jpg" alt="Fitness Tracker" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Fitness Tracking App</h3>
+                        <p class="text-gray-600 mb-4">A mobile-first application for tracking workouts and fitness progress.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm text-gray-500">React Native • Firebase</span>
+                            <a href="#" class="text-indigo-500 hover:text-indigo-600 font-medium">View Project →</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-50 rounded-xl overflow-hidden shadow-md card-hover" data-aos="fade-up" data-aos-delay="400">
+                    <img src="https://picsum.photos/seed/project5/400/250.jpg" alt="Restaurant Booking System" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Restaurant Booking System</h3>
+                        <p class="text-gray-600 mb-4">An online reservation system for restaurants with table management.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm text-gray-500">Angular • Spring Boot • MySQL</span>
+                            <a href="#" class="text-indigo-500 hover:text-indigo-600 font-medium">View Project →</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-50 rounded-xl overflow-hidden shadow-md card-hover" data-aos="fade-up" data-aos-delay="500">
+                    <img src="https://picsum.photos/seed/project6/400/250.jpg" alt="Blog Platform" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Content Management System</h3>
+                        <p class="text-gray-600 mb-4">A robust CMS for bloggers and content creators with publishing tools.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm text-gray-500">Next.js • GraphQL • Prisma</span>
+                            <a href="#" class="text-indigo-500 hover:text-indigo-600 font-medium">View Project →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-50" data-aos="fade-up">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4 gradient-text">Get In Touch</h2>
+                <p class="text-gray-600 text-lg">Ready to start your next project? Let's talk!</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div class="space-y-8" data-aos="fade-right">
+                    <div class="flex items-start space-x-4">
+                        <div class="w-12 h-12 bg-indigo-100 rounded-full flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-envelope text-indigo-500"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold mb-2">Email</h3>
+                            <p class="text-gray-600">loyalsufyan@gmail.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start space-x-4">
+                        <div class="w-12 h-12 bg-pink-100 rounded-full flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-phone text-pink-500"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold mb-2">Phone</h3>
+                            <p class="text-gray-600">+880 18664-62601</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start space-x-4">
+                        <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-map-marker-alt text-purple-500"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold mb-2">Location</h3>
+                            <p class="text-gray-600">Gazipur,Dhaka,Bangladesh</p>
+                        </div>
+                    </div>
+                    
+                    <div class="pt-6">
+                        <h3 class="text-lg font-semibold mb-4">Follow Me</h3>
+                        <div class="flex space-x-4">
+                            <a href="https://www.facebook.com/SufyanTheBro" class="w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center hover:bg-indigo-500 hover:text-white transition-colors duration-300">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                            <a href="" class="w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center hover:bg-indigo-500 hover:text-white transition-colors duration-300">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center hover:bg-indigo-500 hover:text-white transition-colors duration-300">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center hover:bg-indigo-500 hover:text-white transition-colors duration-300">
+                                <i class="fab fa-dribbble"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-8 rounded-xl shadow-md" data-aos="fade-left">
+                    <form class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-700 mb-2">Name</label>
+                            <input type="text" id="name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent outline-none transition-all duration-300" placeholder="Your Name">
+                        </div>
+                        
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email</label>
+                            <input type="email" id="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent outline-none transition-all duration-300" placeholder="your.email@example.com">
+                        </div>
+                        
+                        <div>
+                            <label for="subject" class="block text-sm font-medium text-gray-700 mb-2">Subject</label>
+                            <input type="text" id="subject" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent outline-none transition-all duration-300" placeholder="Project Inquiry">
+                        </div>
+                        
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-700 mb-2">Message</label>
+                            <textarea id="message" rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent outline-none transition-all duration-300 resize-none" placeholder="Tell me about 								your project..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="w-full bg-gradient-to-r from-indigo-500 to-pink-500 text-white py-3 rounded-lg font-medium hover:from-indigo-600 hover:to-pink-600 transition-all duration-300 transform hover:scale-105">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer-main" class="bg-dark text-white py-12" data-aos="fade-up">
+        <div id="footer-container" class="container mx-auto px-6">
+            <div id="grid-column-one" class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center md:text-left">
+                    <h3 class="text-2xl font-bold gradient-text mb-4">Sufyan</h3>
+                    <p class="text-gray-400">Creating digital experiences that make a difference.</p>
+                </div>
+                
+                <div id="footer-head-text" class="text-center md:text-left">
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul id="footer-ul" class="space-y-2 text-gray-400">
+                        <li><a href="#home" class="hover:text-white transition-colors duration-300">Home</a></li>
+                        <li><a href="#about" class="hover:text-white transition-colors duration-300">About</a></li>
+                        <li><a href="#services" class="hover:text-white transition-colors duration-300">Services</a></li>
+                        <li><a href="#portfolio" class="hover:text-white transition-colors duration-300">Portfolio</a></li>
+                        <li><a href="#contact" class="hover:text-white transition-colors duration-300">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="text-center md:text-left">
+                    <h4 class="text-lg font-semibold mb-4">Connect With Me</h4>
+                    <div class="flex justify-center md:justify-start space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">
+                            <i class="fab fa-twitter text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">
+                            <i class="fab fa-linkedin-in text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">
+                            <i class="fab fa-github text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">
+                            <i class="fab fa-dribbble text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 Sufyan. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
